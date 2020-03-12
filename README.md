@@ -1,3 +1,22 @@
-# node-projects
+# auth-jwt-node project
 
-Each branch represents a project sample
+-- Files that should be created on root directory
+- .env
+- .gitignore
+- .babelrc
+
+-- Dev dependencies that should be installed via npm:
+- @babel/core
+- @babel/cli
+- @babel/preset-env
+- @babel/transform-runtime
+- rimraf
+- dotenv
+
+-- Dev dependencies that should be installed via npm:
+- express
+- mongoose
+- express-validator
+- bcryptjs
+- jsonwebtoken
+

@@ -1,0 +1,45 @@
+{
+  "name": "auth-jwt-node",
+  "version": "1.0.0",
+  "description": "that a model to use in future projects",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist/",
+    "transpile": "babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "build": "npm run clean && npm run transpile",
+    "server": "node ./dist/server.js",
+    "startServer": "npm run clean && npm run transpile && npm run server",
+    "start": "nodemon --exec npm run startServer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edneyRoldao/auth-jwt-node.git"
+  },
+  "author": "edney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edneyRoldao/auth-jwt-node/issues"
+  },
+  "homepage": "https://github.com/edneyRoldao/auth-jwt-node#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "dotenv": "^8.2.0",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.4"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src/"
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+dist
+# .env (real projects this file must be ignored)
+.idea
+node_modules
